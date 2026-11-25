@@ -1,4 +1,4 @@
-import { expect, test, type Page } from '@playwright/test';
+import { expect, test, type Page } from './fixtures.ts';
 
 test.beforeEach(async ({ page, context }) => {
 	await context.clearPermissions(); // geolocation denied by default
@@ -234,6 +234,8 @@ test('bottom sheet follows a drag up and down', async ({ page }) => {
 	await page.mouse.up();
 	await expect(toggle).toHaveAttribute('aria-expanded', 'true');
 	await expect(page.getByTestId('nearby-row').first()).toBeInViewport();
+	// Measure where the header ends up, not where it is halfway through the opening animation.
+	await expect(page.getByTestId('summary-panel')).not.toHaveClass(/\banimate\b/);
 	const top = (await toggle.boundingBox())!;
 	await page.mouse.move(x, top.y + 20);
 	await page.mouse.down();

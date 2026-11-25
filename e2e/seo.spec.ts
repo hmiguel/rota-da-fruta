@@ -1,4 +1,4 @@
-import { expect, test, type APIRequestContext } from '@playwright/test';
+import { expect, test, type APIRequestContext } from './fixtures.ts';
 
 const SITE = 'https://rotadafruta.org';
 const PAGES: [string, string, string][] = [
