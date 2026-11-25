@@ -16,7 +16,7 @@
 	import PanelHead from './kit/PanelHead.svelte';
 	import { trapTab } from './trap.ts';
 
-	const FEEDBACK = 'hugo@lixo.dev';
+	const FEEDBACK = 'ola@rotadafruta.org';
 	let { onClose }: { onClose: () => void } = $props();
 	let drawer: HTMLDivElement;
 	let startX: number | null = null;

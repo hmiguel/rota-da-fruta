@@ -33,4 +33,4 @@ These keep the app consistent. Reviewers will ask for them.
 
 ## Code of conduct
 
-Be kind and assume good faith. We follow the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). Report problems to hugo@lixo.dev.
+Be kind and assume good faith. We follow the [Contributor Covenant 2.1](https://www.contributor-covenant.org/version/2/1/code_of_conduct/). Report problems to ola@rotadafruta.org.
