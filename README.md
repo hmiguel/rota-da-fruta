@@ -1,10 +1,10 @@
-# Fruta da Rua
+# Rota da Fruta
 
 A community map of Lisbon's fruit trees that shows what's in season right now. Open it on your phone while you're out: search for a fruit or tap one of the chips, and the map shows the trees with fruit to pick this month, each with its harvest months, a picking tip and directions.
 
-**Live:** https://fruta-da-rua.lixo.dev · Made in Europe · Free and open source (MIT)
+**Live:** https://rotadafruta.org · Made in Europe · Free and open source (MIT)
 
-> **Em português:** a Fruta da Rua é um mapa comunitário das árvores de fruto de Lisboa que mostra o que está na época. É software livre: qualquer pessoa pode usar, estudar, melhorar e partilhar. Contribuições em português são bem-vindas.
+> **Em português:** a Rota da Fruta é um mapa comunitário das árvores de fruto de Lisboa que mostra o que está na época. É software livre: qualquer pessoa pode usar, estudar, melhorar e partilhar. Contribuições em português são bem-vindas.
 
 ## Where the data comes from
 
@@ -44,7 +44,7 @@ Ideas, bug reports, wrong trees and missing species are all welcome. See [CONTRI
 
 ## Support the project
 
-If Fruta da Rua is useful to you, you can [sponsor it on GitHub](https://github.com/sponsors/hmiguel).
+If Rota da Fruta is useful to you, you can [sponsor it on GitHub](https://github.com/sponsors/hmiguel).
 
 ## Licence
 

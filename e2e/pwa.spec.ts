@@ -4,7 +4,7 @@ test('web manifest is installable', async ({ request }) => {
 	const res = await request.get('/manifest.webmanifest');
 	expect(res.ok()).toBe(true);
 	const m = await res.json();
-	expect(m.name).toBe('Fruta da Rua');
+	expect(m.name).toBe('Rota da Fruta');
 	expect(m.display).toBe('standalone');
 	const sizes = m.icons.map((i: { sizes: string }) => i.sizes);
 	expect(sizes).toEqual(expect.arrayContaining(['192x192', '512x512']));

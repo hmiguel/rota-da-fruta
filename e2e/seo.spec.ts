@@ -1,6 +1,6 @@
 import { expect, test, type APIRequestContext } from '@playwright/test';
 
-const SITE = 'https://fruta-da-rua.lixo.dev';
+const SITE = 'https://rotadafruta.org';
 const PAGES: [string, string, string][] = [
 	// path, lang, its other-language twin
 	['/', 'pt-PT', '/en'],

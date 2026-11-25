@@ -1,4 +1,4 @@
-# Contributing to Fruta da Rua
+# Contributing to Rota da Fruta
 
 Thank you for helping. You can write in Portuguese or English.
 
