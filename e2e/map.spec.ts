@@ -135,7 +135,7 @@ test('menu: feedback by email, Escape closes and gives focus back', async ({ pag
 	await page.getByTestId('menu-open').click();
 	const menu = page.getByTestId('menu');
 	await expect(menu).toBeFocused();
-	await expect(menu.getByTestId('feedback')).toHaveAttribute('href', /^mailto:hugo@lixo\.dev\?subject=/);
+	await expect(menu.getByTestId('feedback')).toHaveAttribute('href', /^mailto:ola@rotadafruta\.org\?subject=/);
 	await expect(menu.getByTestId('sponsor-open')).toHaveAttribute('href', 'https://github.com/sponsors/hmiguel');
 	await expect(menu).not.toContainText('Abre o seu email');
 	// Everything behind the full-window menu is switched off while it is open.
