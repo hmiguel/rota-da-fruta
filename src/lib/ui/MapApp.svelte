@@ -15,6 +15,8 @@
 	import SearchBar from './SearchBar.svelte';
 	import NearbySheet from './NearbySheet.svelte';
 	import TreeSheet from './TreeSheet.svelte';
+	import Welcome from './Welcome.svelte';
+	import { isFirstVisit, markWelcomed } from '$lib/welcome.ts';
 
 	let now = $state(new Date());
 	const month = $derived(lisbonMonth(now));
@@ -42,6 +44,7 @@
 		// A link (`?fruta=figo,nespera&epoca=0`) wins over what was chosen last time.
 		app.filters = filtersFromQuery(location.search, i18n.lang) ?? readSaved(localStorage) ?? app.filters;
 		ready = true;
+		app.welcomeOpen = isFirstVisit(localStorage);
 		try {
 			const res = await fetch('/trees.json');
 			if (!res.ok) throw new Error(String(res.status));
@@ -96,6 +99,14 @@
 	{/if}
 	{#if app.menuOpen}
 		<Menu onClose={() => (app.menuOpen = false)} />
+	{/if}
+	{#if app.welcomeOpen}
+		<Welcome
+			onClose={() => {
+				markWelcomed(localStorage);
+				app.welcomeOpen = false;
+			}}
+		/>
 	{/if}
 </main>
 

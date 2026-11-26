@@ -283,20 +283,21 @@ test('menu order: map and calendar, etiquette and settings, sponsor and feedback
 	]);
 });
 
-test('add to home screen: steps on iPhone', async ({ browser }) => {
-	const ctx = await browser.newContext({
+test.describe('on an iPhone', () => {
+	test.use({
 		viewport: { width: 390, height: 844 },
 		userAgent:
 			'Mozilla/5.0 (iPhone; CPU iPhone OS 18_0 like Mac OS X) AppleWebKit/605.1.15 (KHTML, like Gecko) Version/18.0 Mobile/15E148 Safari/604.1'
 	});
-	const page = await ctx.newPage();
-	await page.goto('/');
-	await page.getByTestId('menu-open').click();
-	await page.getByTestId('install-open').click();
-	await expect(page.getByTestId('panel-back')).toBeFocused();
-	await expect(page.getByTestId('install-steps')).toContainText('Partilhar');
-	await expect(page.getByTestId('install-steps').locator('li')).toHaveCount(3);
-	await ctx.close();
+
+	test('add to home screen: steps on iPhone', async ({ page }) => {
+		await page.goto('/');
+		await page.getByTestId('menu-open').click();
+		await page.getByTestId('install-open').click();
+		await expect(page.getByTestId('panel-back')).toBeFocused();
+		await expect(page.getByTestId('install-steps')).toContainText('Partilhar');
+		await expect(page.getByTestId('install-steps').locator('li')).toHaveCount(3);
+	});
 });
 
 test("add to home screen: uses the browser's own install prompt when there is one", async ({ page }) => {

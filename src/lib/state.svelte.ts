@@ -4,6 +4,8 @@ export const app = $state({
 	filters: { ...DEFAULT_FILTERS } as Filters,
 	selectedTreeId: null as string | null,
 	menuOpen: false,
+	/** The first-visit explanation of the site and the map. */
+	welcomeOpen: false,
 	searchOpen: false,
 	nearbyOpen: false,
 	/** Where the map should go next (a tree picked from a list), or null. */
@@ -11,7 +13,8 @@ export const app = $state({
 });
 
 /** The dialog on top takes Escape first. */
-export const topLayer = () => (app.menuOpen ? 'menu' : app.searchOpen ? 'search' : app.nearbyOpen ? 'nearby' : null);
+export const topLayer = () =>
+	app.welcomeOpen ? 'welcome' : app.menuOpen ? 'menu' : app.searchOpen ? 'search' : app.nearbyOpen ? 'nearby' : null;
 
 /**
  * Adds or removes a fruit. Choosing one that isn't in season turns the season switch off,

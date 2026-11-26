@@ -97,5 +97,13 @@
 	"install.ios_3": "Tap \"Add\".",
 	"install.browser_1": "Open the browser menu, the three dots next to the address.",
 	"install.browser_2": "Choose \"Install app\" or \"Add to home screen\".",
-	"menu.opens_outside": "opens outside the app"
+	"menu.opens_outside": "opens outside the app",
+	"welcome.title": "Welcome to Rota da Fruta",
+	"welcome.lead": "Lisbon has thousands of fruit trees on its streets and in its gardens. This map shows where they are and what's in season.",
+	"welcome.dots": "Each dot is a tree. Coloured dots are in season, grey ones aren't.",
+	"welcome.clusters": "A circle with a number groups several trees. Zoom in to see them.",
+	"welcome.filter": "Pick a fruit in the top bar, or search for it by name.",
+	"welcome.tap": "Tap a tree to see when it fruits and how to get there.",
+	"welcome.respect": "Pick with care: by hand or from the ground, only what you need.",
+	"welcome.start": "Explore the map"
 }
