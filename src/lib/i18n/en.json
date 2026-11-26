@@ -100,7 +100,7 @@
 	"menu.opens_outside": "opens outside the app",
 	"welcome.title": "Welcome to Rota da Fruta",
 	"welcome.lead": "Lisbon has thousands of fruit trees on its streets and in its gardens. This map shows where they are and what's in season.",
-	"welcome.dots": "Each dot is a tree. Coloured dots are in season, grey ones aren't.",
+	"welcome.dots": "Each fruit on the map is a tree. Bright ones are in season, faded ones aren't.",
 	"welcome.clusters": "A circle with a number groups several trees. Zoom in to see them.",
 	"welcome.filter": "Pick a fruit in the top bar, or search for it by name.",
 	"welcome.tap": "Tap a tree to see when it fruits and how to get there.",

@@ -100,7 +100,7 @@
 	"menu.opens_outside": "abre fora da app",
 	"welcome.title": "Boas-vindas à Rota da Fruta",
 	"welcome.lead": "Lisboa tem milhares de árvores de fruto nas ruas e jardins. Este mapa mostra onde estão e o que está na época.",
-	"welcome.dots": "Cada ponto é uma árvore. Os coloridos estão na época, os cinzentos não.",
+	"welcome.dots": "Cada fruto no mapa é uma árvore. Os de cor viva estão na época, os desbotados não.",
 	"welcome.clusters": "Um círculo com um número junta várias árvores. Aproxime o mapa para as ver.",
 	"welcome.filter": "Escolha um fruto na barra de cima ou procure-o pelo nome.",
 	"welcome.tap": "Toque numa árvore para saber quando dá fruto e como lá chegar.",

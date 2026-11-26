@@ -53,7 +53,9 @@
 		<p id="welcome-lead" class="lead">{t('welcome.lead')}</p>
 		<ul>
 			<li>
-				<span class="pic" aria-hidden="true"><i class="dot on"></i><i class="dot off"></i></span>
+				<span class="pic" aria-hidden="true"
+					><img src="/art/sm/orange.webp" alt="" /><img class="faded" src="/art/sm/orange.webp" alt="" /></span
+				>
 				<span>{t('welcome.dots')}</span>
 			</li>
 			<li>
@@ -129,22 +131,17 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
-		gap: 4px;
-		width: 36px;
+		gap: 2px;
+		width: 46px;
 		color: var(--ink);
 	}
-	/* The map's own marks, so the key matches what's on screen. */
-	.dot {
-		width: 13px;
-		height: 13px;
-		border-radius: 50%;
-		border: 1.5px solid var(--ink);
+	/* The map's own marks, so the key matches what's on screen: out of season is faded, as on the map. */
+	img {
+		width: 22px;
+		height: 22px;
 	}
-	.dot.on {
-		background: #e8892b;
-	}
-	.dot.off {
-		background: #9ca3af;
+	.faded {
+		opacity: 0.4;
 	}
 	.cluster {
 		display: grid;
